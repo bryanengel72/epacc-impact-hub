@@ -124,7 +124,6 @@ export default function App() {
 function FontLoader() {
   return (
     <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
       * { box-sizing: border-box; }
       body { margin: 0; }
       @keyframes rise { from { opacity:0; transform: translateY(14px);} to {opacity:1; transform:none;} }
@@ -134,7 +133,7 @@ function FontLoader() {
       }
       .lift { transition: transform .18s ease, box-shadow .18s ease; }
       .lift:hover { transform: translateY(-3px); }
-      button:focus-visible, a:focus-visible { outline: 3px solid ${C.gold}; outline-offset: 2px; }
+      button:focus-visible, a:focus-visible { outline: 3px solid #D4A02A; outline-offset: 2px; }
     `}</style>
   );
 }
