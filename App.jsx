@@ -99,6 +99,32 @@ const PLANS = [
 const usd = (n) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
+// ---- shared style helpers ---------------------------------
+const h2 = () => ({
+  fontFamily: displayStack,
+  fontSize: 34,
+  lineHeight: 1.12,
+  fontWeight: 600,
+  letterSpacing: "-0.02em",
+  color: C.navy,
+  margin: "0 0 14px",
+});
+
+const lead = () => ({
+  fontSize: 18,
+  lineHeight: 1.6,
+  color: C.slate,
+  margin: "0 0 8px",
+});
+
+const card = () => ({
+  background: C.white,
+  border: `1px solid ${C.line}`,
+  borderRadius: 16,
+  padding: 22,
+  boxShadow: "0 1px 2px rgba(11,37,69,0.04)",
+});
+
 // ============================================================
 export default function App() {
   const [view, setView] = useState("home"); // home | give | admin
